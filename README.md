@@ -406,12 +406,14 @@ cat urllist.txt | tr -d ' '
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![Screenshot from 2024-02-25 19-18-22](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/cd898673-61d6-4e9c-af4e-33646580d46d)
 
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![Screenshot from 2024-02-25 19-19-55](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/e8c3766b-d3f1-40be-97ec-d691d72f145a)
 
 
 mkdir backupdir
@@ -420,18 +422,22 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![Screenshot from 2024-02-27 13-26-34](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/a565b543-cdfd-4d7f-9ae7-93454c2c46b7)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![Screenshot from 2024-02-27 13-27-09](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/cb97f710-5e43-44b7-9e41-9423f632d706)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![Screenshot from 2024-02-27 14-14-33](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/8e4d9e5c-8fbb-4a16-808a-2cedd5335151)
+
 gunzip backup.tar.gz
 ## OUTPUT
+![Screenshot from 2024-02-27 14-16-05](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/434c88fe-4868-4711-97d1-3ca4adc05a50)
 
  
 # Shell Script
@@ -442,6 +448,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+![Screenshot from 2024-02-27 19-23-29](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/705743aa-da56-468d-8cb0-64bb80fc0854)
 
  
 cat << stop > herecheck.txt
@@ -454,6 +461,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+![Screenshot from 2024-02-27 14-14-33](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/577dc710-e2f5-47ca-a18c-2235256d029a)
 
 
 cat < scriptest.sh 
@@ -492,24 +500,16 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![Screenshot from 2024-02-27 19-48-25](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/0458be6e-6018-4e62-9013-25688c61807a)
 
  
 ls file1
 ## OUTPUT
+![Screenshot from 2024-02-27 19-51-23](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/c214767b-fdae-4cc4-8281-59b0c333839c)
 
 echo $?
 ## OUTPUT 
-./one
-bash: ./one: Permission denied
- 
-echo $?
-## OUTPUT 
- 
-abcd
- 
-echo $?
- ## OUTPUT
-
+![Screenshot from 2024-02-27 19-51-45](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/9df8671b-1ea3-46ba-8e1b-bd0ac99fe637)
 
  
 # mis-using string comparisons
@@ -540,7 +540,8 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
+## OUTPUT
+![Screenshot from 2024-02-28 22-06-26](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/5957a1be-48a0-41ca-b58b-457777eb0b62)
 
 
 
@@ -548,6 +549,7 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![Screenshot from 2024-02-28 22-10-00](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/0a59ee23-676b-4ff2-b647-1a0ef94e9621)
 
 
 # check file ownership
@@ -573,8 +575,13 @@ else
 echo “Sorry, you are not the owner of the /etc/passwd file”
 fi
  ```
+
+## OUTPUT
+
 ./psswdperm.sh
 ## OUTPUT
+![Screenshot from 2024-02-28 22-23-41](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/868cc5b2-4edc-4fdb-9152-a99936bb4b97)
+
 
 # check if with file location
 cat>ifnested.sh 
