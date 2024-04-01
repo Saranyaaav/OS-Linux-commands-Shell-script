@@ -65,7 +65,7 @@ diff file1 file2
 ![Screenshot from 2024-02-20 18-54-29](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/208403ee-ead1-42e0-9361-f6853a67e80c)
 
 
-#Filters
+## Filters
 
 ### Create the following files file11, file22 as follows:
 
@@ -377,7 +377,7 @@ uniq file22
 
 
 
-#Using tr command
+## Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
@@ -408,7 +408,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 
 
 
-#Backup commands
+## Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
 ![Screenshot from 2024-02-25 19-19-55](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/e8c3766b-d3f1-40be-97ec-d691d72f145a)
