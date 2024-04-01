@@ -852,7 +852,8 @@ $ chmod 755 forin2.sh
 $ ./forin2.sh 
  
 cat forin3.sh 
-```bash
+```
+bash
 \#!/bin/bash
 \# another example of how not to use the for command
 for test in I don\'t know if "this'll" work
@@ -1014,7 +1015,8 @@ $ chmod 755 exread1.sh
 $ ./exread1.sh 
  
 cat funcex.sh
-```bash
+```
+bash
 #!/bin/bash
 # trying to access script parameters inside a function
 function func {
@@ -1036,7 +1038,8 @@ fi
 
  
 cat argshift.sh
-```bash
+```
+bash
 #!/bin/bash 
  while (( "$#" )); do 
   echo $1 
@@ -1049,7 +1052,8 @@ $ chmod 777 argshift.sh
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
-```bash
+```
+bash
  #/bin/bash 
  # store arguments in a special array 
 args=("$@") 
@@ -1063,10 +1067,12 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
-```bash
+```
+bash
 #!/bin/bash 
 set -x 
 while (( "$#" )); do 
@@ -1077,10 +1083,11 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+
  
 cat > nc.awk
-```bash
+```
+bash
 BEGIN{}
 {
 print len=length($0),"\t",$0 
@@ -1094,7 +1101,8 @@ print "No of Words count:",wordcount
 }
  ```
 cat>data.dat
-```bash
+```
+bash
 bcdfghj
 abcdfghj
 bcdfghj
@@ -1108,9 +1116,11 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+![Screenshot from 2024-02-29 09-44-43](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/9c76d402-2f7a-480a-939b-6d46a046a4d6)
  
 cat > palindrome.sh
-```bash
+```
+bash
 #num=545
 echo "Enter the number"
 read num
