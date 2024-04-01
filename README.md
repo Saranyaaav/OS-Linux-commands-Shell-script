@@ -109,9 +109,11 @@ hello world
 ^d
 ````
 cat > newfile 
+```
 Hello world
 hello world
- 
+```
+
 grep Hello newfile 
 ## OUTPUT
 ![Screenshot from 2024-02-20 19-08-43](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/c3b97c60-e771-44e2-ae34-933f769abaaa)
