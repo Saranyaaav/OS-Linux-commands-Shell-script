@@ -348,11 +348,7 @@ sed -n '2,4{s/^/$/;p}' file23
 ![Screenshot from 2024-02-25 19-04-13](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/a53c0709-6860-453d-ba4a-eb3f3d3c1bfc)
 
 
-
-sed -n '2,4{s/$/*/;p}' file23
-
-
-#Sorting File content
+## Sorting File content
 cat > file21
 ```
 1001 | Ram | 10000 | HR
