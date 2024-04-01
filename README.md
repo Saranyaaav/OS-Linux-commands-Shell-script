@@ -441,9 +441,12 @@ gunzip backup.tar.gz
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
-echo 'echo Hello World‘; exit 0 >> my-script.sh
+echo 'echo Hello World'; exit 0 >> my-script.sh
 ```
+echo 'echo Hello World' >> my-script.sh
+
 chmod 755 my-script.sh
+
 ./my-script.sh
 ## OUTPUT
 ![Screenshot from 2024-02-27 19-23-29](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/705743aa-da56-468d-8cb0-64bb80fc0854)
@@ -459,11 +462,11 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![Screenshot from 2024-02-27 14-14-33](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/577dc710-e2f5-47ca-a18c-2235256d029a)
-
+![Screenshot from 2024-02-27 19-26-08](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/dca773ec-71dd-41e4-81ce-a8fda873dfd0)
 
 cat < scriptest.sh 
-```bash
+```
+bash
 \#!/bin/sh
 echo “File name is $0 ”
 echo "File name is " `basename $0`
@@ -479,7 +482,8 @@ ps
  ```
 
 cat scriptest.sh 
-```bash
+```
+bash
 \#!/bin/sh
 echo “File name is $0 ”
 echo "File name is " `basename $0`
@@ -552,7 +556,8 @@ chmod 755 strcomp.sh
 
 # check file ownership
 cat < psswdperm.sh 
-```bash
+```
+bash
 \#!/bin/bash
 if [ -O /etc/passwd ]
 then
@@ -564,7 +569,8 @@ fi
 ```
 
 cat psswdperm.sh 
-```bash
+```
+bash
 /#!/bin/bash
 if [ -O /etc/passwd ]
 then
@@ -575,6 +581,7 @@ fi
  ```
 
 ## OUTPUT
+![Screenshot from 2024-02-28 22-22-10](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/a8d885c1-a3a0-4d47-a2ff-6e24161bd94d)
 
 ./psswdperm.sh
 ## OUTPUT
@@ -583,7 +590,8 @@ fi
 
 # check if with file location
 cat>ifnested.sh 
-```bash
+```
+bash
 \#!/bin/bash
 if [ -e $HOME ]
 then
@@ -623,6 +631,7 @@ else
 echo “Sorry, the object does not exist”
 fi
 ```
+## OUTPUT
 
 ./ifnested.sh 
 ## OUTPUT
@@ -631,7 +640,8 @@ fi
 
 # using numeric test comparisons
 cat > iftest.sh 
-```bash
+```
+bash
 \#!/bin/bash
 val1=10
 val2=11
@@ -650,7 +660,8 @@ fi
 
 
 cat iftest.sh 
-```bash
+```
+bash
 \#!/bin/bash
 val1=10
 val2=11
