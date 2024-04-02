@@ -631,11 +631,9 @@ else
 echo “Sorry, the object does not exist”
 fi
 ```
-## OUTPUT
-
 ./ifnested.sh 
 ## OUTPUT
-
+![Screenshot from 2024-02-28 22-36-05](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/b0193c6d-b1cb-41cd-b486-c86a47129930)
 
 
 # using numeric test comparisons
@@ -680,7 +678,8 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+![Screenshot from 2024-02-28 23-14-22](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/2b66bf55-e05f-4522-9002-1a93f2a4796b)
 
 # check if a file
 cat > ifnested.sh 
@@ -729,7 +728,8 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+![Screenshot from 2024-02-28 23-16-22](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/de83ffa4-1c94-4c3b-898c-b489c4fb0e52)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -758,6 +758,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![Screenshot from 2024-02-28 23-19-56](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/eb1f9b0e-fc58-471f-8e35-a2169d797153)
 
 
 # testing compound comparisons
@@ -772,8 +773,10 @@ echo "I cannot write to the file"
 fi
 ```
 $ chmod 755 ifcompound.sh
+
 $ ./ifcompound.sh 
 ## OUTPUT
+![Screenshot from 2024-02-28 23-21-30](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/89bbefc4-0566-4b84-b13b-c30841991981)
 
 # using the case command
 cat >casecheck.sh 
@@ -793,7 +796,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+## OUTPUT
+![Screenshot from 2024-02-28 23-24-24](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/54fc2b09-d982-4530-8bd2-431197e68a31)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -808,7 +813,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+## OUTPUT
+![Screenshot from 2024-02-29 08-07-49](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/f2b7181d-e177-4aa9-bffe-936937c1add6)
+
  
 cat untiltest.sh 
 ```bash
@@ -821,33 +828,25 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
+## OUTPUT
+ ![Screenshot from 2024-02-29 08-10-23](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/43995a23-d712-4c8c-82d7-9117bbe6165c)
+
  
- 
- 
-cat forin1.sh 
+ cat forin1.sh 
 ```bash
-\#!/bin/bash
-\#basic for command
+#!/bin/bash
+# basic for command
 for test in Alabama Alaska Arizona Arkansas California Colorado
 do
 echo The next state is $test
 done
- ```
- 
+```
 $ chmod 755 forin1.sh
- 
- 
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
- ```
- 
-$ chmod 755 forin2.sh
+
+$ ./forin1.sh
+## OUTPUT
+![Screenshot from 2024-02-29 08-23-32](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/ced30681-c2bb-4cb6-ad88-95b787329e0d) 
+
  
 cat forin2.sh 
 ```bash
@@ -861,6 +860,9 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+## OUTPUT
+![Screenshot from 2024-02-29 08-21-51](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/4ad9005d-67bd-49bd-95ac-ff06a3299c3a)
+
  
 cat forin3.sh 
 ```
@@ -873,19 +875,10 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
-
 ## OUTPUT
+![Screenshot from 2024-02-29 08-29-34](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/d4709947-0da2-4ba5-b9dd-bd682ab4d7df)
+
+ 
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -897,6 +890,7 @@ echo "Visit beautiful $file“
 done
 ```
 $ chmod 777 forinfile.sh
+
 $ cat cities
 Hyderabad
 Alampur
@@ -906,7 +900,9 @@ Adilabad
 Bhadrachalam
 Khammam
 
+$ ./forinfile.sh
 ## OUTPUT
+![Screenshot from 2024-02-29 09-02-36](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/b8d2773b-6370-415d-8081-be5e9287b33a)
 
 
 cat forctype.sh 
@@ -919,8 +915,10 @@ echo "The value of i is $i"
 done
 ````
 $ chmod 755 forctype.sh
+
 $ ./forctype.sh 
 ## OUTPUT
+![Screenshot from 2024-02-29 08-48-26](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/f9f8b7cc-1803-4714-b852-33bd2175d3d6)
 
 cat forctype1.sh 
 ```bash
@@ -931,9 +929,11 @@ do
 echo "$a - $b"
 done
 ```
-$ chmod 755 forctype.sh
+$ chmod 755 forctype1.sh
+
 $ ./forctype1.sh 
 ## OUTPUT
+![Screenshot from 2024-02-29 08-58-04](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/b22a1767-6048-43a8-9c76-0cdd0d9a3104)
 
 cat fornested1.sh 
 ```bash
@@ -952,6 +952,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+![Screenshot from 2024-02-29 09-06-09](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/bda034df-506b-4c75-91d3-6084d379e4c1)
 
  
 cat forbreak.sh 
@@ -968,14 +969,16 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
+## OUTPUT
+![Screenshot from 2024-02-29 09-09-03](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/d7630abe-2de7-4f72-a5a8-ea37f35463e5)
+
  
 cat forbreak.sh 
-```bash
+```
+bash
 #!/bin/bash
 # breaking out of a for loop
 for var1 in 1 2 3 4 5
@@ -994,9 +997,11 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Screenshot from 2024-02-29 09-10-47](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/f57b1afe-59fa-4bab-a776-415889690b27)
+
 cat exread.sh 
-```bash
+```
+bash
 #!/bin/bash
 # testing the read command
 echo -n "Enter your name: "
@@ -1008,6 +1013,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![Screenshot from 2024-02-29 09-12-48](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/024f5b22-1b53-4a29-a624-997102169253)
 
 
  cat exread1.sh
@@ -1019,11 +1025,10 @@ echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
 
-## OUTPUT
-
-
-
 $ ./exread1.sh 
+## OUTPUT
+![Screenshot from 2024-02-29 09-16-23](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/15c775c2-ca86-4c04-bdd0-47a95958036b)
+
  
 cat funcex.sh
 ```
@@ -1041,11 +1046,11 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
-## OUTPUT
- ./funcex.sh 
+./funcex.sh 
 
- 
  ./funcex.sh 1 2
+## OUTPUT
+![Screenshot from 2024-02-29 09-18-53](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/dcef0872-99ea-4164-9b73-c4c2ffc86460)
 
  
 cat argshift.sh
@@ -1059,9 +1064,10 @@ done
 ```
 $ chmod 777 argshift.sh
 
-## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+## OUTPUT
+![Screenshot from 2024-02-29 09-23-49](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/e745e545-caf7-4d03-aa5f-aa6b5b12b850)
+
  cat argshift1.sh
 ```
 bash
@@ -1076,12 +1082,14 @@ for (( i=0;i<$ELEMENTS;i++)); do
     echo ${args[${i}]} 
 done
 ```
-$ chmod 777 argshift.sh
-## OUTPUT
+$ chmod 777 argshift1.sh
 
-$ ./argshift.sh 1 2 3
+$ ./argshift1.sh
+## OUTPUT
+![Screenshot from 2024-02-29 09-28-34](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/71a1f1dc-d279-4606-8c09-d058b26a349b)
+
  
-cat argshift.sh
+cat argshift2.sh
 ```
 bash
 #!/bin/bash 
@@ -1092,8 +1100,12 @@ while (( "$#" )); do
 done
 set +x
 ```
+$ chmod 777 argshift2.sh
+
+$ ./argshift2.sh 1 2 3
 ## OUTPUT
- ./argshift.sh 1 2 3
+![Screenshot from 2024-02-29 09-32-48](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/42f00e38-a234-491f-acd7-009430bb525c)
+
 
  
 cat > nc.awk
@@ -1155,7 +1167,11 @@ else
 	echo "Number is NOT palindrome"
 fi
 ```
+chmod 777 palindrome.sh
+
+./palindrome.sh
 ## OUTPUT 
+![Screenshot from 2024-02-29 09-42-46](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/b4ac440e-e7d6-4070-8038-e4e5ba2f19f4)
 
 
 # RESULT:
