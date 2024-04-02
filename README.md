@@ -422,13 +422,15 @@ tar -xvf backup.tar
 ## OUTPUT
 ![Screenshot from 2024-02-27 13-27-09](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/cb97f710-5e43-44b7-9e41-9423f632d706)
 
-gzip backup.tar
+# gzip backup.tar
 
 ls .gz
 ## OUTPUT
  ![Screenshot from 2024-02-27 14-14-33](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/8e4d9e5c-8fbb-4a16-808a-2cedd5335151)
 
 gunzip backup.tar.gz
+
+ls.tar
 ## OUTPUT
 ![Screenshot from 2024-02-27 14-16-05](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/434c88fe-4868-4711-97d1-3ca4adc05a50)
 
