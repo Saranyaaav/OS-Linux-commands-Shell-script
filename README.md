@@ -412,11 +412,6 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 tar -cvf backup.tar *
 ## OUTPUT
 ![Screenshot from 2024-02-25 19-19-55](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/e8c3766b-d3f1-40be-97ec-d691d72f145a)
-
-
-mkdir backupdir
- 
-mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
