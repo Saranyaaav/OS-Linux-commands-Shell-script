@@ -887,12 +887,19 @@ done
 $ chmod 777 forinfile.sh
 
 $ cat cities
+
 Hyderabad
+
 Alampur
+
 Basara
+
 Warangal
+
 Adilabad
+
 Bhadrachalam
+
 Khammam
 
 $ ./forinfile.sh
