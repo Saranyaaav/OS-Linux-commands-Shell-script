@@ -1166,4 +1166,6 @@ chmod 777 palindrome.sh
 ![Screenshot from 2024-02-29 09-42-46](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/b4ac440e-e7d6-4070-8038-e4e5ba2f19f4)
 
 # RESULT:
+___
 The Commands are executed successfully.
+___
