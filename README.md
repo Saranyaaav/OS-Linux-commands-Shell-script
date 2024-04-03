@@ -702,7 +702,8 @@ fi
 ```
 
 cat ifnested.sh 
-```bash
+```
+bash
 \#!/bin/bash
 if [ -e $HOME ]
 then
@@ -730,7 +731,8 @@ $ ./ifnested.sh
 
 # looking for a possible value using elif
 cat elifcheck.sh 
-```bash
+```
+bash
 \#!/bin/bash
 if [ $USER = Ram ]
 then
@@ -757,7 +759,6 @@ $ ./elifcheck.sh
 ## OUTPUT
 ![Screenshot from 2024-02-28 23-19-56](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/eb1f9b0e-fc58-471f-8e35-a2169d797153)
 
-
 # testing compound comparisons
 cat> ifcompound.sh 
 ```bash
@@ -777,7 +778,8 @@ $ ./ifcompound.sh
 
 # using the case command
 cat >casecheck.sh 
-```bash
+```
+bash
 case $USER in
 Ram | Robert)
 echo "Welcome, $USER"
@@ -797,7 +799,8 @@ $ ./casecheck.sh
 ![Screenshot from 2024-02-28 23-24-24](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/54fc2b09-d982-4530-8bd2-431197e68a31)
 
 cat > whiletest
-```bash
+```
+bash
 #!/bin/bash
 #while command test
 var1=10
@@ -813,9 +816,9 @@ $ ./whiletest.sh
 ## OUTPUT
 ![Screenshot from 2024-02-29 08-07-49](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/f2b7181d-e177-4aa9-bffe-936937c1add6)
 
- 
 cat untiltest.sh 
-```bash
+```
+bash
 \#using the until command
 var1=100
 until [ $var1 -eq 0 ]
@@ -828,9 +831,9 @@ $ chmod 755 untiltest.sh
 ## OUTPUT
  ![Screenshot from 2024-02-29 08-10-23](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/43995a23-d712-4c8c-82d7-9117bbe6165c)
 
- 
  cat forin1.sh 
-```bash
+```
+bash
 #!/bin/bash
 # basic for command
 for test in Alabama Alaska Arizona Arkansas California Colorado
@@ -844,9 +847,9 @@ $ ./forin1.sh
 ## OUTPUT
 ![Screenshot from 2024-02-29 08-23-32](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/ced30681-c2bb-4cb6-ad88-95b787329e0d) 
 
- 
 cat forin2.sh 
-```bash
+```
+bash
 \#!/bin/bash
 \# another example of how not to use the for command
 for test in I don't know if this'll work
@@ -859,7 +862,6 @@ $ chmod 755 forin2.sh
 $ ./forin2.sh 
 ## OUTPUT
 ![Screenshot from 2024-02-29 08-21-51](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/4ad9005d-67bd-49bd-95ac-ff06a3299c3a)
-
  
 cat forin3.sh 
 ```
@@ -875,9 +877,9 @@ $ ./forin3.sh
 ## OUTPUT
 ![Screenshot from 2024-02-29 08-29-34](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/d4709947-0da2-4ba5-b9dd-bd682ab4d7df)
 
- 
 cat forinfile.sh 
-```bash
+```
+bash
 #!/bin/bash
 # reading values from a file
 file="cities"
@@ -891,26 +893,20 @@ $ chmod 777 forinfile.sh
 $ cat cities
 
 Hyderabad
-
 Alampur
-
 Basara
-
 Warangal
-
 Adilabad
-
 Bhadrachalam
-
 Khammam
 
 $ ./forinfile.sh
 ## OUTPUT
 ![Screenshot from 2024-02-29 09-02-36](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/b8d2773b-6370-415d-8081-be5e9287b33a)
 
-
 cat forctype.sh 
-```bash
+```
+bash
 #!/bin/bash
 # testing the C-style for loop
 for (( i=1; i <= 5; i++ ))
@@ -925,7 +921,8 @@ $ ./forctype.sh
 ![Screenshot from 2024-02-29 08-48-26](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/f9f8b7cc-1803-4714-b852-33bd2175d3d6)
 
 cat forctype1.sh 
-```bash
+```
+bash
 #!/bin/bash
 # multiple variables
 for (( a=1, b=5; a <= 5; a++, b-- ))
@@ -940,7 +937,8 @@ $ ./forctype1.sh
 ![Screenshot from 2024-02-29 08-58-04](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/b22a1767-6048-43a8-9c76-0cdd0d9a3104)
 
 cat fornested1.sh 
-```bash
+```
+bash
 #!/bin/bash
 # nesting for loops
 for (( a = 1; a <= 3; a++ ))
@@ -958,9 +956,9 @@ $ ./fornested1.sh
  ## OUTPUT
 ![Screenshot from 2024-02-29 09-06-09](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/bda034df-506b-4c75-91d3-6084d379e4c1)
 
- 
 cat forbreak.sh 
-```bash
+```
+bash
 #!/bin/bash
 # breaking out of a for loop
 for var1 in 1 2 3 4 5
@@ -978,7 +976,6 @@ $ chmod 755 forbreak.sh
 $ ./forbreak.sh 
 ## OUTPUT
 ![Screenshot from 2024-02-29 09-09-03](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/d7630abe-2de7-4f72-a5a8-ea37f35463e5)
-
  
 cat forbreak.sh 
 ```
@@ -995,8 +992,6 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-
- 
 $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
@@ -1011,14 +1006,12 @@ bash
 echo -n "Enter your name: "
 read name
 echo "Hello $name, welcome to my program. "
- ```
- 
+```
 $ chmod 755 exread.sh 
  
 $ ./exread.sh 
 ## OUTPUT
 ![Screenshot from 2024-02-29 09-12-48](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/024f5b22-1b53-4a29-a624-997102169253)
-
 
  cat exread1.sh
 ```bash
@@ -1032,7 +1025,6 @@ $ chmod 755 exread1.sh
 $ ./exread1.sh 
 ## OUTPUT
 ![Screenshot from 2024-02-29 09-16-23](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/15c775c2-ca86-4c04-bdd0-47a95958036b)
-
  
 cat funcex.sh
 ```
@@ -1055,7 +1047,6 @@ fi
  ./funcex.sh 1 2
 ## OUTPUT
 ![Screenshot from 2024-02-29 09-18-53](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/dcef0872-99ea-4164-9b73-c4c2ffc86460)
-
  
 cat argshift.sh
 ```
@@ -1091,7 +1082,6 @@ $ chmod 777 argshift1.sh
 $ ./argshift1.sh
 ## OUTPUT
 ![Screenshot from 2024-02-29 09-28-34](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/71a1f1dc-d279-4606-8c09-d058b26a349b)
-
  
 cat argshift2.sh
 ```
@@ -1109,8 +1099,6 @@ $ chmod 777 argshift2.sh
 $ ./argshift2.sh 1 2 3
 ## OUTPUT
 ![Screenshot from 2024-02-29 09-32-48](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/42f00e38-a234-491f-acd7-009430bb525c)
-
-
  
 cat > nc.awk
 ```
@@ -1177,8 +1165,5 @@ chmod 777 palindrome.sh
 ## OUTPUT 
 ![Screenshot from 2024-02-29 09-42-46](https://github.com/Saranyaaav/OS-Linux-commands-Shell-script/assets/144870813/b4ac440e-e7d6-4070-8038-e4e5ba2f19f4)
 
-
 # RESULT:
-___
 The Commands are executed successfully.
-___
