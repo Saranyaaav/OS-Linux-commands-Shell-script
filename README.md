@@ -1179,4 +1179,6 @@ chmod 777 palindrome.sh
 
 
 # RESULT:
+___
 The Commands are executed successfully.
+___
